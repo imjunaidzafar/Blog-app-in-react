@@ -1,0 +1,152 @@
+.container2 {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+/*============================== Left Data ===================================*/
+
+.leftData {
+  /* border: 2px solid blue; */
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.create-blog__form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 90%;
+}
+
+.create-blog__form input,
+.create-blog__form textarea {
+  width: 85%;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border-radius: 0.2rem;
+  font-size: 1.1rem;
+  color: black;
+  border: 2px solid gray;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  resize: none;
+}
+
+.btn {
+  background: black;
+  border-radius: 0.8rem;
+  padding: 0.6rem;
+  font-size: 1.4rem;
+  color: white;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  transition: all 300ms ease;
+  width: 150px;
+  cursor: pointer;
+}
+.btn:hover {
+  background: white;
+  color: black;
+}
+
+.blog__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.arrow-btn {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  align-items: center;
+  margin-right: 3rem;
+  color: black;
+}
+.btn-icon {
+  font-size: 1.2rem;
+}
+
+/*============================== Right Data ===================================*/
+.rightData {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightData form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed black;
+  height: 70%;
+  width: 85%;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+}
+.rightData img {
+  width: 70%;
+  height: 70%;
+  border-radius: 5px;
+}
+
+.uploaded-row {
+  margin: 0.625rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.938rem 1.25rem;
+  border-radius: 5px;
+  background: #e9f0ff;
+  width: 80%;
+}
+.upload-content {
+  display: flex;
+  align-items: center;
+}
+
+/*======================= MEDIA QUERIES (MEDIUM DEVICE) =========================*/
+
+@media screen and (max-width: 1024px) {
+  .container2 {
+    width: 95%;
+  }
+
+  .btn {
+    width: 130px;
+  }
+  .arrow-btn {
+    margin-right: 1rem;
+  }
+}
+
+/*======================= MEDIA QUERIES (SMALL DEVICE) =========================*/
+
+@media screen and (max-width: 600px) {
+  .container2 {
+    width: 95%;
+    flex-direction: column;
+    height: 95vh;
+  }
+  .create-blog__form {
+    gap: 1rem;
+  }
+  .btn {
+    width: 100px;
+  }
+  .leftData {
+    height: 86%;
+    margin-bottom: 1rem;
+  }
+}
